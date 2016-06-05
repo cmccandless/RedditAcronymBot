@@ -110,14 +110,6 @@ def bot_action(c,condition,verbose=True,respond=False):
   if respond:
     c.reply(response)
 
-def testit():
-  input="""There is actual accountability in the military. Example: Situation occurs and MP strikes somebody in the head for whatever reason. That report goes to 
-  the Provost Marshals office, MP's command knows about it, other persons command gets informed, JAG might be informed, MPI or CID might also be involved 
-  depending on the situation. So before that MP is even off duty 30+ people know about the event. Somebody WILL fuck you up if you didn't do things right. The 
-  thin blue line doesn't exist to the same extant that it does for civilian law enforcement. Please excuse any errors, on mobile.""" 
-  output=processComment(input)
-  print(output)
-
 r = praw.Reddit(user_agent)
 o = OAuth2Util.OAuth2Util(r,print_log=True)
 o.refresh(force=True)
